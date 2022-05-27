@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .box{
+            width: 40%;
+            background-color: yellow;
+            transition: 2s;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        p{
+            font-size: 16px;
+            margin: auto;
+        }
+        h2{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .box:hover{
+            width: 60%;
+            background-color: rgb(255, 71, 71);
+        }
+        .space{
+            width: 100%;
+            height: 200px;
+        }
+        .ball
+        {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: linear-gradient(blue 50%,deeppink 50%);
+            animation: bounce 2s linear infinite;
+            margin:auto;
+        }
+        @keyframes bounce {
+            0%
+            {
+                transform: translateY(0px) ;
+         
+            }
+            50%
+            {
+                transform: translateY(-50px);
+                 
+            }
+            100%
+            {
+                transform: translateY(0px);
+                     
+            }
+            
+            }
+            #h{
+                margin-bottom: 50px;
+            }
+    </style>
+</head>
+<body>
+    <h2>CSS transitions </h2>
+    <br>
+    <div class="box">
+        <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
+    </div>
+    <div class="space">
+
+    </div>
+    <h2 id="h">
+        CSS Transform
+    </h2>
+    <br>
+    <div class="ball">
+
+    </div>
+    <p>CSS transforms allow you to move, rotate, scale, and skew elements.</p>
+</body>
+</html>

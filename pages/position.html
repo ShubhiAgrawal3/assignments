@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div.static1 {
+  position: static;
+  border: 3px solid grey;
+}
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid grey;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid grey;
+}
+div.relative1 {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid grey;
+} 
+
+div.absolute1 {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid grey;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid grey;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="relate">
+            <h3>POSITION : RELATIVE</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum similique aliquam odit repudiandae atque, harum sed numquam et mollitia? Quisquam vero eveniet, consectetur dolores, molestias ad hic, iure repellendus expedita doloribus sapiente. Dignissimos quo porro vitae suscipit incidunt fuga voluptates laudantium, blanditiis
+                 sapiente, quod dolore alias deserunt mollitia similique!</p>
+                 <div class="relative">
+                    This div element has position: relative;
+                    </div>
+                    
+
+        </div>
+        <div class="static">
+            <h3>POSITION : STATIC</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum similique aliquam odit repudiandae atque, harum sed numquam et mollitia? Quisquam vero eveniet, consectetur dolores, molestias ad hic, iure repellendus expedita doloribus sapiente. Dignissimos quo porro vitae suscipit incidunt fuga voluptates laudantium, blanditiis
+                sapiente, quod dolore alias deserunt mollitia similique!</p>
+                <div class="static1">
+                    This div element has position: static;
+                    </div>
+
+        </div>
+        <div class="FIXED">
+            <h3>POSITION : FIXED</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum similique aliquam odit repudiandae atque, harum sed numquam et mollitia? Quisquam vero eveniet, consectetur dolores, molestias ad hic, iure repellendus expedita doloribus sapiente. Dignissimos quo porro vitae suscipit incidunt fuga voluptates laudantium, blanditiis
+                sapiente, quod dolore alias deserunt mollitia similique!</p>
+                
+<div class="fixed">
+    This div element has position: fixed;
+    </div>
+
+        </div>
+        <div class="absolute">
+            <h3>POSITION : ABSOLUTE</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum similique aliquam odit repudiandae atque, harum sed numquam et mollitia? Quisquam vero eveniet, consectetur dolores, molestias ad hic, iure repellendus expedita doloribus sapiente. Dignissimos quo porro vitae suscipit incidunt fuga voluptates laudantium, blanditiis
+                sapiente, quod dolore alias deserunt mollitia similique!</p>
+                <div class="relative1">This div element has position: relative;
+                    <div class="absolute1">This div element has position: absolute;</div>
+                  </div>
+                  
+
+        </div>
+        <div class="stick">
+            <h3>POSITION : STICKY</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum similique aliquam odit repudiandae atque, harum sed numquam et mollitia? Quisquam vero eveniet, consectetur dolores, molestias ad hic, iure repellendus expedita doloribus sapiente. Dignissimos quo porro vitae suscipit incidunt fuga voluptates laudantium, blanditiis
+                sapiente, quod dolore alias deserunt mollitia similique!</p>
+                <div class="sticky">I am sticky!</div>
+                <div style="padding-bottom:2000px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. 
+      Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+        </div>
+    </div>
+</body>
+</html>

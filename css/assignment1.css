@@ -1,0 +1,114 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box
+{
+    width: 45%;
+    height: 105vh;
+    background-color:rgb(1, 229, 229);
+    margin-top: 70px;
+}
+form
+{
+    width: 100%;
+    
+}
+.header
+{
+    border-style: double;
+    border-color: black;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 5%;
+}
+.header h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 20px;
+    
+}
+.content
+{
+    width: 80%;
+    margin: auto;
+    
+}
+.content label
+{
+    width: 40%;
+    
+}
+#name{
+    margin-left: 95px;
+}
+#Fname{
+    margin-left: 40px;
+}
+#Mname{
+    margin-left: 36px;
+}
+#phn{
+    margin-left: 41px;
+}
+#email{
+    margin-left: 95px;
+}
+#dob{
+    margin-left: 48px;
+}
+#address{
+    margin-left: 87px;
+}
+#blood{
+    margin-left: 49px;
+}
+#dep{
+    margin-left: 54px;
+}
+#course1{
+margin-left: 90px;
+}
+#photo{
+    margin-left: 80px;
+}
+#submit{
+    margin-left:20px;
+    width: 90px;
+}
+#gender{
+    margin-left: 70px;
+}
+table{
+    border: 1px solid black;
+    margin: auto;
+    width: 50%;
+    height: 250px;
+
+}
+caption{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+tbody{
+    text-align: center;
+}
+thead{
+    text-align: center;
+}

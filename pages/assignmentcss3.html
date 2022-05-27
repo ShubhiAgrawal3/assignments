@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2
+        {
+            text-align: center;
+            padding: 20px;
+        }
+        p,h3{
+            padding: 15px;
+        }
+        div > p{   /*child selector */
+            background-color: aquamarine;
+        }
+        .box2 + p{
+            background-color: rgb(210, 185, 232);
+        }
+        div ~ p{
+            background-color: rgb(99, 99, 194);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>
+        CSS Combinators
+    </h2>
+    <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+    <h3>
+        Child selector(>)
+    </h3>
+    <div class="box">
+   <p> The child selector selects all elements that are the children of a specified element.</p>
+</div>
+<h3>Adjacent Sibling Selector(+)</h3>
+<div class="box2">
+    <p>The adjacent sibling selector is used to select an element that is directly after another specific element.
+        they have have parent element.
+    </p>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt inventore cupiditate. Perspiciatis, nemo pariatur alias ipsum velit molestias? Nobis, beatae pariatur. Numquam, nesciunt quasi.</p>
+<h3>General Sibling selector(~)</h3>
+<div class="box3">
+    <p>The adjacent sibling selector is used to select an element that is directly after another specific element</p>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aliquid! Suscipit quod eveniet sapiente veniam aperiam ea minus, laboriosam sit reiciendis porro esse aliquid voluptatibus.</p>
+<h5>it is not edited</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem nulla obcaecati sequi libero tenetur repellendus? Provident aliquid id beatae! Vitae ut doloremque dolor adipisci.</p>
+</body>
+</html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Assignment</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+      }
+        .btn-outline-dark{
+            border-radius: 25px;
+        }
+        li{
+            padding: 26px;
+            
+        }
+        p{
+          font-size: 20px;  
+        }
+        .circle{
+          height: 8vh;
+          width: 80px;
+          /* border: 1px solid gray; */
+          box-shadow: 2px 3px 5px rgb(189, 189, 189) inset;
+        }
+        .box{
+          border-right: 1px dotted rgb(192, 192, 192);
+          height: 30vh;
+        }
+        .box1{
+          border-bottom: 3px dotted rgb(192, 192, 192);
+          height: 60vh;
+        }
+        .tick{
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-image: linear-gradient(to right ,rgba(13,53,148,.9),#35d3e1);
+        }
+        .xyz
+        {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+
+        }
+        .card{
+          box-shadow: -3px -3px 0px rgb(240, 239, 239) inset,3px 3px 0px rgb(221, 221, 221) inset;
+        
+        }
+        .x{
+          box-shadow: -3px -3px 0px rgb(240, 239, 239) inset,3px 3px 0px rgb(221, 221, 221) inset;
+          border: 0px;
+          border-radius: 25px;
+        }
+        a:hover{
+          background-image: linear-gradient(to right ,rgba(13,53,148,.9),#35d3e1);
+        }
+        .input-form{
+          border-radius: 25px;
+          border: 0px;
+          font-size: 14px;
+          box-shadow: -3px -3px 0px rgb(240, 239, 239) inset,3px 3px 0px rgb(221, 221, 221) inset;
+          width: 90%;
+        }
+        .icons{
+          border-radius: 50%;
+          background-color: rgb(217, 217, 217);
+        }
+        .label{
+          color: gray;
+        }
+        .submit{
+          width: 100%;
+          border-radius: 30px;
+          color: white;
+          background-image: linear-gradient(to right ,rgba(13,53,148,.9),#35d3e1);
+          font-size: 20px;
+        }
+        @media (min-width: 1200px) {
+    .container{
+        max-width: 1700px;
+    }
+}
+        
+        
+    </style>
+</head>
+<body style="overflow: auto;">
+    <div id="_next">
+        <div class="page-header mb-4 p-2">
+            <div class="container-fluid bg-white">
+                <div class="container">
+
+                    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white text-primary">
+                        <img src="../assets/logo-min.png" class="rounded float-left" alt="" style="height:10% ; width:70px">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  All products
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-primary" href="#">COVID-19 Assistance <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-primary" href="#">Claims</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-primary" href="#">Support</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <button type="button" class="btn x bg-light p-2 text-primary"> <i class="fa-solid fa-user"></i>  Self Service </button>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <main>
+          <div class="container-fluid">
+            <section class="mb-4">
+              <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="text-primary p-2">
+                    Become an agent
+                  </h1>
+                  <p class="float-left">By becoming an Insurance Agent, you can contribute towards your family’s financial prosperity and also have the opportunity to impact other people’s lives positively.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="../assets/tata_aig_claims_process_2dd9469361.svg" alt="" height="300px" width="100%" class="float-right">
+                </div>
+              </div>
+            </div>
+            </section>
+            <section>
+              <div class="container">
+                <p>Get associated with Tata AIG by sharing few of the contact details to get back:</p>
+              <form action="" class="bg-light p-3 mb-3" style="border-radius: 25px;box-shadow: -3px -3px 0px rgb(240, 239, 239) inset,3px 3px 0px rgb(221, 221, 221) inset;">
+                  <h4 class="text-primary p-2 mb-2">Details Required</h4>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <label for="title" class=" label p-2 ml-4">Title</label>
+                      <div class="input-f">
+                        <input type="text" placeholder="  Title" class="input-form p-3 bg-light">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="fname" class=" label p-2 ml-4">First Name</label>
+                      <div class="input-f">
+                        <input type="text" placeholder="  First Name" class="input-form p-3">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="Lname" class=" label p-2 ml-4">Last Name</label>
+                      <div class="input-f">
+                        <input type="text" placeholder="  Last Name" class="input-form p-3">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <label for="phn" class=" label p-2 ml-4">Phone Number</label>
+                      <div class="input-f">
+                        <input type="text" placeholder="  Phone Number" class="input-form p-3 bg-light">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="alt" class=" label p-2 ml-4">Alternate Mobile number</label>
+                      <div class="input-f">
+                        <input type="text" placeholder="  Mobile Number" class="input-form p-3">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="Email" class=" label p-2 ml-4">Email</label>
+                      <div class="input-f">
+                        <input type="text" placeholder="  Email" class="input-form p-3">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <label for="City" class=" label p-2 ml-4">CIty</label>
+                      <div class="input-f">
+                        <input type="text" placeholder="  City" class="input-form p-3 bg-light">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="State" class=" label p-2 ml-4">State</label>
+                      <div class="input-f">
+                        <select class="input-form p-3 bg-light">
+                          <option>select</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="new" class=" label p-2 ml-4">New To Industry</label>
+                      <div class="input-f">
+                        <select class="input-form p-3 bg-light">
+                          <option>select</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <label for="current" class=" label p-2 ml-4">Current Company Working With</label>
+                      <div class="input-f">
+                        <input type="text" placeholder="  Current COmpany" class="input-form p-3 bg-light">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="job" class=" label p-2 ml-4">Job Type</label>
+                      <div class="input-f">
+                        <select class="input-form p-3 bg-light">
+                          <option>select</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="associate" class=" label p-2 ml-4">Are You Associated With</label>
+                      <div class="input-f">
+                        <select class="input-form p-3 bg-light">
+                          <option>select</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <label for="line" class=" label p-2 ml-4">Line Of Business</label>
+                      <div class="input-f">
+                        <select class="input-form p-3 bg-light">
+                          <option>select</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="annual" class=" label p-2 ml-4">Annual Business Potential</label>
+                      <div class="input-f">
+                        <select class="input-form p-3 bg-light">
+                          <option>select</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-3">
+                      <input type="submit" class="submit btn p-3 mt-4" value="Proceed">
+                    </div>
+                  </div>
+              </form>
+              </div>
+            </section>
+            <section class="bg-light">
+              <div class="container">
+                <div class="row mt-4 p-2">
+                  <div class="col-12 mt-4 p-2">
+                    <h2 class="text-center">Why You Should Join Tata AIG</h2>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="box col-12 col-md-3 d-flex justify-content-center align-items-center flex-column">
+                      <div class="circle rounded-circle d-flex justify-content-center align-items-center mb-4">
+                        <img src="../assets/aig1.svg" height="30px" width="30px" alt="">
+                      </div>
+                      <div class="text text-center">
+                        <p style="font-size: 16px;">Secure your customers with <br> India’s most trusted brand, <br> Tata AIG</p>
+                      </div>
+                  </div>
+                  <div class="box col-12 col-md-3 d-flex justify-content-center align-items-center flex-column">
+                      <div class="circle rounded-circle d-flex justify-content-center align-items-center mb-4">
+                        <img src="../assets/aig2.svg" height="30px" width="30px" alt="">
+                      </div>
+                      <div class="text text-center">
+                        <p style="font-size: 16px;">
+                          At Tata AIG we keep our <br> values first i.e. PEOPLE, <br> EMPATHY, INTEGRITY, <br> CUSTOMER FIRST
+                        </p>
+                      </div>
+                  </div>
+                  <div class="box col-12 col-md-3 d-flex justify-content-center align-items-center flex-column">
+                      <div class="circle rounded-circle d-flex justify-content-center align-items-center mb-4">
+                        <img src="../assets/aig3.svg" height="30px" width="30px" alt="">
+                      </div>
+                      <div class="text text-center">
+                        <p style="font-size: 16px;">
+                          You can look for long term <br> association and growth in <br> your career
+                        </p>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-3 d-flex justify-content-center align-items-center flex-column">
+                      <div class="circle rounded-circle d-flex justify-content-center align-items-center mb-4">
+                        <img src="../assets/aig4.svg" height="30px" width="30px" alt="">
+                      </div>
+                      <div class="text text-center">
+                        <p style="font-size: 16px;">
+                          Great earning opportunity <br> along with recognition for <br> your hard work
+                        </p>
+                      </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-12 p-4">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="box1 container mt-4 p-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="text-primary p-2">
+                    What Tata AIG offers you?
+                  </h1>
+                  <ul style="list-style-type: none;font-size: 14px;">
+                    <li class="d-flex"><span class="tick material-symbols-outlined mr-2"></span> 
+                      Learning opportunity for you with our exclusive Tata AIG Academy which helps you to <br> enhance your skills
+                    </li>
+                    <li class="d-flex"><span class="tick material-symbols-outlined mr-2"></span> 
+                      Claim servicing in need is what customer buys & at Tata AIG customer claim are <br> serviced by an experienced in-house claims management team
+                    </li>
+                    <li class="d-flex"><span class="tick material-symbols-outlined mr-2"></span> 
+                      Comprehensive product solutions – Motor , Health, Travel & Corporate <br> risk solutions
+                    </li>
+                    <li class="d-flex"><span class="tick material-symbols-outlined mr-2"></span> 
+                      Business development support and handhold at each <br> progressive step
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <img src="../assets/Group_4670_6b91069233.svg" alt="" height="400px" width="100%" class="float-right">
+                </div>
+              </div>
+            </div>
+            </section>
+            <section>
+              <div class="container pb-5">
+                <div class="container mt-md-5 py-5 pb-md-0">
+                  <div class="row FOOTER_BEFORE_FOOTER"></div>
+                </div>
+                <div class="card CustomCard mt-3 p-5">
+                  <div class="FOOTER_PADDING d-flex flex-column flex-md-row">
+                    <section class="d-flex flex-column" style="flex: 1">
+                      <div class="flex-grow-1">
+                        <img
+                          class="LOGO_FOOTER"
+                          src="https://www.tataaig.com/logo-min.png"
+                          alt=""
+                          loading="lazy"
+                          decoding="sync"
+                          height="50"
+                          width="50"
+                        />
+                      </div>
+                      <div class="flex-column">
+                        <div class="contentClass2 footerHover mt-md-4 mt-3 pt-3 pb-1">
+                          Download Our App
+                        </div>
+                        <div class="py-2">
+                          <a href="">
+                            <img
+                              src="https://www.tataaig.com/s3/google_play_badge_c786de1341.svg"
+                              class="PLAY_IMAGE"
+                              title="Play Store"
+                              alt="Play Store"
+                              loading="lazy"
+                              decoding="sync"
+                            />
+                          </a>
+                        </div>
+                        <div class="py-2">
+                          <a href="">
+                            <img
+                              src="https://www.tataaig.com/s3/app_store_696810fe31.svg"
+                              class="PLAY_IMAGE"
+                              title="Apple Store"
+                              alt="Play Store"
+                              loading="lazy"
+                              decoding="sync"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="contentClass3 text-left mt-4 pt-4 mt-md-3 pt-md-3"
+                        style="opacity: 0.6"
+                      >
+                        Follow Us
+                      </div>
+                      <div class="mt-3 d-flex socialMediaIcons socialBox">
+                        <a href="" target="blank" class="icons p-2 m-2">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="" target="blank" class="icons p-2 m-2">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="" target="blank" class="icons p-2 m-2">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="" target="blank" class="icons p-2 m-2">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                        
+                      </div>
+                    </section>
+                    <section style="flex: 1">
+                      <div class="subHeading text-capitalize HEADING_FOOTER p-2 mb-4">COMPANY</div>
+                      <section class="LINKS_FOOTER">
+                        <div class="p-2">
+                          <a
+                            href=""
+                            target="_self"
+                            class="contentClass2 mt-3 footerHover"
+                            title="Know More About Our Vision, Mission, Core Value & Team"
+                            >About Us</a
+                          >
+                        </div>
+                        <div class="p-2">
+                          <a
+                            href=""
+                            class="mt-3 contentClass2 footerHover"
+                            title="Know More About Public Disclousers"
+                            >Public Disclousers</a
+                          >
+                        </div>
+                        <div class="p-2">
+                          <a
+                            href=""
+                            class="contentClass2 mt-3 footerHover"
+                            title="Contact Us To Get Better Understanding"
+                            >Contact Us</a
+                          >
+                        </div>
+                        <div class="p-2">
+                          <a
+                            href=""
+                            class="contentClass2 mt-3 footerHover"
+                            title="More Careers"
+                            >Careers</a
+                          >
+                        </div>
+                        <div class="p-2">
+                          <a
+                            href=""
+                            class="contentClass2 mt-3 footerHover"
+                            title="Know About How to do registration"
+                            >Agent Registration</a
+                          >
+                        </div>
+                      </section>
+                    </section>
+          
+                    <section style="flex: 1">
+                      <div class="subHeading text-capitalize HEADING_FOOTER p-2 mb-4">
+                        Resources
+                      </div>
+                      <section class="LINKS_FOOTER">
+                        <div class="p-2">
+                          <a
+                            href=""
+                            target="_self"
+                            class="contentClass2 mt-3 footerHover"
+                            title="Read Our Blogs to educate yourself about insurance and services"
+                            >Blog</a
+                          >
+                        </div>
+                        <div class="p-2">
+                          <a
+                            href=""
+                            class="mt-3 contentClass2 footerHover"
+                            title="Read Most Frequently asked questions and get answers to all your questions"
+                            >Insurance FAQs</a
+                          >
+                        </div>
+                      </section>
+                    </section>
+          
+                    <section style="flex: 1">
+                      <div class="subHeading text-capitalize HEADING_FOOTER p-2 mb-4">
+                        Services
+                      </div>
+                      <section class="LINKS_FOOTER">
+                        <div class="p-2">
+                          <a
+                            href=""
+                            target="_self"
+                            class="contentClass2 mt-3 footerHover"
+                            title="Renew your car health and bike insurance online"
+                            >Renewals</a
+                          >
+                        </div>
+                        <div class="p-2">
+                          <a
+                            href=""
+                            class="mt-3 contentClass2 footerHover"
+                            title="Login to our user dashboard and Explore all our services and offerings"
+                            >Self Service</a
+                          >
+                        </div>
+                        <div class="p-2">
+                          <a
+                            href=""
+                            class="contentClass2 mt-3 footerHover"
+                            title="Raise and inspection request for your vechile and check the status of your request"
+                            >Vechile Inspection</a
+                          >
+                        </div>
+                      </section>
+                    </section>
+                  </div>
+                </div>
+          
+                <div class="card CustomCard mt-4 mDisplayNone">
+                  <div
+                    class="FOOTER_PADDING py-0 position-relative"
+                    style="cursor: pointer"
+                  >
+                    <div class="d-flex" style="border-bottom: none">
+                      <section style="flex: 1" class="subHeading py-3 position-relative">
+                        <span>Health Insurance</span>
+                        <aside class="position-absolute seperator">&nbsp;</aside>
+                      </section>
+                      <section style="flex: 1" class="subHeading py-3 position-relative">
+                        <span>Motor Insurance</span>
+                        <aside class="position-absolute seperator">&nbsp;</aside>
+                      </section>
+                      <section style="flex: 1" class="subHeading py-3 position-relative">
+                        <span>Travel Insurance</span>
+                        <aside class="position-absolute seperator">&nbsp;</aside>
+                      </section>
+                      <section style="flex: 1" class="subHeading py-3 position-relative">
+                        <span>Other Insurance</span>
+                      </section>
+          
+                      <span
+                        class="accordShadow"
+                        data-toggle="collapse"
+                        data-target="demo"
+                      >
+                        <img src="https://www.tataaig.com/iconDown.png" alt="icon" height:
+                        "12px" width: "12px">
+                      </span>
+                    </div>
+                  </div>
+                  <div id="demo" class="collapse">
+                    <div class="FOOTER_PADDING pt-0 d-flex">
+                      <section class="d-flex flex-column LINKS_FOOTER" style="flex: 1">
+                        <div style="padding-right: 50px">
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                          <a class="contentClass2 text-capitalize footerHover"
+                            >MediaCare</a
+                          >
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="row mt-4 dDisplayNone">
+                  <div class="col-12">
+                    <div class="card CustomCard" style="border-radius: 30px">
+                      <div class="card-body accordHeadingPadding position-relative">
+                        <div class="subHeading" style="cursor: pointer">
+                          Health Insurance
+                        </div>
+                        <span class="accordShadow">
+                          <img src="https://www.tataaig.com/iconDown.png" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4 dDisplayNone">
+                  <div class="col-12">
+                    <div class="card CustomCard" style="border-radius: 30px">
+                      <div class="card-body accordHeadingPadding position-relative">
+                        <div class="subHeading" style="cursor: pointer">
+                          Motor Insurance
+                        </div>
+                        <span class="accordShadow">
+                          <img src="https://www.tataaig.com/iconDown.png" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4 dDisplayNone">
+                  <div class="col-12">
+                    <div class="card CustomCard" style="border-radius: 30px">
+                      <div class="card-body accordHeadingPadding position-relative">
+                        <div class="subHeading" style="cursor: pointer">
+                          Travel Insurance
+                        </div>
+                        <span class="accordShadow">
+                          <img src="https://www.tataaig.com/iconDown.png" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4 dDisplayNone">
+                  <div class="col-12">
+                    <div class="card CustomCard" style="border-radius: 30px">
+                      <div class="card-body accordHeadingPadding position-relative">
+                        <div class="subHeading" style="cursor: pointer">
+                          Other Insurance
+                        </div>
+                        <span class="accordShadow">
+                          <img src="https://www.tataaig.com/iconDown.png" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                            
+            </section>
+            <section>
+              <div class="container-fluid px-0">
+                <div class="row" style="background-color: #18478b">
+                  <div class="container">
+                    <div class="mt-3 borderDotted">
+                      <div class="p-3 mDisplayNone text-center" style="overflow: hidden">
+                        <a href="" class="contentClass3 px-2 text-white border-right"
+                          >Disclaimer</a
+                        >
+                        <a href="" class="contentClass3 px-2 text-white border-right"
+                          >Terms of Use</a
+                        >
+                        <a href="" class="contentClass3 px-2 text-white border-right"
+                          >Downloads</a
+                        >
+                        <a href="" class="contentClass3 px-2 text-white border-right"
+                          >IRDAI</a
+                        >
+                        <a href="" class="contentClass3 px-2 text-white border-right"
+                          >GST Registration Numbers</a
+                        >
+                        <a href="" class="contentClass3 px-2 text-white border-right"
+                          >Privacy Policy</a
+                        >
+                        <a href="" class="contentClass3 px-2 text-white border-right"
+                          >Grievance Redressal Policy</a
+                        >
+                        <a href="" class="contentClass3 px-2 text-white">General</a>
+                      </div>
+                      <div class="dDisplayNone py-3 text-center" style="overflow: hidden">
+                        <div>
+                          <a href="" class="contentClass3 px-2 text-white border-right"
+                            >Disclaimer</a
+                          >
+                          <a href="" class="contentClass3 px-2 text-white border-right"
+                            >Terms of Use</a
+                          >
+                          <a href="" class="contentClass3 px-2 text-white border-right"
+                            >Downloads</a
+                          >
+                          <a href="" class="contentClass3 px-2 text-white border-right"
+                            >IRDAI</a
+                          >
+                        </div>
+                        <div>
+                          <a href="" class="contentClass3 px-2 text-white border-right"
+                            >GST Registration Numbers</a
+                          >
+                          <a href="" class="contentClass3 px-2 text-white border-right"
+                            >Privacy Policy</a
+                          >
+                        </div>
+                        <div>
+                          <a href="" class="contentClass3 px-2 text-white border-right"
+                            >Grievance Redressal Policy</a
+                          >
+                          <a href="" class="contentClass3 px-2 text-white border-right"
+                            >General</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="my-3 mDisplayNone contentClass3 text-center text-white footer"
+                    >
+                      <p style="font-size: 12px;">
+                        2008, Tata AIG General Insurance Company Limited, all rights
+                        reserved.<br />
+                        Registered Office : Peninsula Business Park, Tower A, 15th Floor,
+                        G.K.Marg, Lower Parel, Mumbai - 400 013, Maharashtra, India.
+                        CINNumber : U85110MH2000PLC128425.
+                        <br />
+                        Registered with IRDA of India Regn. No. 108. Category of
+                        Certificate of Registration: General Insurance. Insurance is the
+                        subject matter of the solicitation.
+                        <br />
+                        For more details on benefits, exclusions, limitations, terms and
+                        conditions, please read sales brochure / policy wording carefully
+                        before concluding a sale.
+                        <br />
+                        Toll Free Number : 1800 266 7780 / 1800 22 9966 (only for senior
+                        citizen policy holders). Email Id – customersupport@tataaig.com.
+                        <br />
+                      </p>
+                    </div>
+                    <div
+                      class="my-3 dDisplayNone contentClass3 text-center text-white footer"
+                    >
+                      <p style="font-size: 12px;">
+                        2008, Tata AIG General Insurance Company Limited, all rights
+                        reserved.<br />
+                        Registered Office : Peninsula Business Park, Tower A, 15th Floor,
+                        G.K.Marg, Lower Parel, Mumbai - 400 013, Maharashtra, India.
+                        CINNumber : U85110MH2000PLC128425.
+                        <br />
+                        Registered with IRDA of India Regn. No. 108. Category of
+                        Certificate of Registration: General Insurance. Insurance is the
+                        subject matter of the solicitation.
+                        <br />
+                        For more details on benefits, exclusions, limitations, terms and
+                        conditions, please read sales brochure / policy wording carefully
+                        before concluding a sale.
+                        <br />
+                        Toll Free Number : 1800 266 7780 / 1800 22 9966 (only for senior
+                        citizen policy holders). Email Id – customersupport@tataaig.com.
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </section>
+          </div>
+        </main>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>
